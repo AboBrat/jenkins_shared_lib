@@ -1,4 +1,4 @@
 def call(){
-    // sh 'mvn build'
+    // sh 'mvn clean install'
     bat 'mvn clean install'
 }
