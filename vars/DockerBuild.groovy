@@ -1,6 +1,5 @@
 def call(String project, String ImageTag, String hubUser){
-    // sh 'mvn test'
-    bat """
+    sh """
 
     docker image build -t ${hubUser}/${project} .
     docker image tag ${hubUser}/${project} ${hubUser}/${project}:${ImageTag}
